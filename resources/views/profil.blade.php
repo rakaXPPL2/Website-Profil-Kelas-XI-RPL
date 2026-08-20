@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 <title>Profil XI RPL 2 - SMKN 1 Garut</title>
+=======
+<title>Profil XI Rekayasa Perangkat Lunak - SMKN 1 GARUT</title>
+>>>>>>> origin/adjie
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -540,8 +544,13 @@
           </svg>
         </div>
         <div class="brand-text">
+<<<<<<< HEAD
           <div class="brand-name">XI RPL 2</div>
           <div class="brand-sub">SMKN 1 Garut</div>
+=======
+          <div class="brand-name">XI Rekayasa Perangkat Lunak</div>
+          <div class="brand-sub">SMKN 1 GARUT</div>
+>>>>>>> origin/adjie
         </div>
       </div>
       <div class="header-actions">
@@ -569,10 +578,17 @@
 
 <section class="hero">
   <div class="container">
+<<<<<<< HEAD
     <div class="hero-eyebrow">SMKN 1 Garut</div>
     <h1>Profil <span class="accent">Kelas XI RPL 2</span></h1>
     <p class="hero-desc">
       Siswa kelas XI Rekayasa Perangkat Lunak yang sedang belajar kolaborasi tim menggunakan Git dan GitHub.
+=======
+    <div class="hero-eyebrow">SMKN 1 GARUT</div>
+    <h1>Profil <span class="accent">Kelas XI Rekayasa Perangkat Lunak</span></h1>
+    <p class="hero-desc">
+      Kelas kita pernah menjuarai Juara 1 Teater dan Juara 2 Padus, serta memiliki banyak murid yang berprestasi.
+>>>>>>> origin/adjie
     </p>
   </div>
 </section>
@@ -588,14 +604,20 @@
           </svg>
         </div>
         <div class="profile-title">
+<<<<<<< HEAD
           <h2>XI Rekayasa Perangkat Lunak 2</h2>
           <span class="subtitle">SMKN 1 Garut</span>
+=======
+          <h2>XI Rekayasa Perangkat Lunak</h2>
+          <span class="subtitle">SMKN 1 GARUT</span>
+>>>>>>> origin/adjie
         </div>
       </div>
 
       <div class="profile-grid">
         <div class="info-box">
           <h4>Nama Sekolah</h4>
+<<<<<<< HEAD
           <p>SMKN 1 Garut</p>
         </div>
         <div class="info-box">
@@ -613,6 +635,25 @@
         <div class="info-box">
           <h4>Mata Pelajaran</h4>
           <p>Dasar-Dasar Pengembangan Perangkat Lunak dan Gim</p>
+=======
+          <p>SMKN 1 GARUT</p>
+        </div>
+        <div class="info-box">
+          <h4>Nama Kelas</h4>
+          <p>XI Rekayasa Perangkat Lunak</p>
+        </div>
+        <div class="info-box">
+          <h4>Program Keahlian</h4>
+          <p>Mempelajari Pengembangan Perangkat Lunak</p>
+        </div>
+        <div class="info-box">
+          <h4>Deskripsi Kelas</h4>
+          <p>Kelas kita pernah menjuarai Juara 1 Teater dan Juara 2 Padus, serta memiliki banyak murid yang berprestasi.</p>
+        </div>
+        <div class="info-box">
+          <h4>Visi Kelas</h4>
+          <p>Berusaha menjadi lebih baik dan mengikuti perlombaan antar jurusan.</p>
+>>>>>>> origin/adjie
         </div>
         <div class="info-box">
           <h4>Topik Pembelajaran</h4>
@@ -639,7 +680,11 @@
           Visi
         </h4>
         <p>
+<<<<<<< HEAD
           Menjadi kelas yang unggul dalam pengembangan perangkat lunak dengan menerapkan praktik kolaborasi tim profesional menggunakan Git dan GitHub, serta siap menghadapi tantangan industri teknologi informasi.
+=======
+          Berusaha menjadi lebih baik dan mengikuti perlombaan antar jurusan.
+>>>>>>> origin/adjie
         </p>
       </div>
 
@@ -656,18 +701,27 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
+<<<<<<< HEAD
             Menguasai konsep dasar pengembangan perangkat lunak secara kolaboratif
+=======
+            Mengembangkan kemampuan dalam pengembangan perangkat lunak dan kolaborasi tim
+>>>>>>> origin/adjie
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
+<<<<<<< HEAD
             Menerapkan workflow Git yang profesional dalam setiap proyek
+=======
+            Menjaga semangat belajar agar terus menjadi lebih baik
+>>>>>>> origin/adjie
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
+<<<<<<< HEAD
             Melakukan code review untuk meningkatkan kualitas kode
           </li>
           <li>
@@ -681,6 +735,9 @@
               <polyline points="20 6 9 17 4 12"/>
             </svg>
             Memahami etika kerja kolaboratif dalam pengembangan perangkat lunak
+=======
+            Aktif mengikuti perlombaan antar jurusan untuk meningkatkan prestasi
+>>>>>>> origin/adjie
           </li>
         </ul>
       </div>

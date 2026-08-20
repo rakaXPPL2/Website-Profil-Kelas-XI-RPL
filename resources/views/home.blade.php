@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 <title>XI RPL 2 - Kelompok 9 | Profile Anggota</title>
+=======
+<title>XI Rekayasa Perangkat Lunak - Kelompok 9 | Profile Anggota</title>
+>>>>>>> origin/adjie
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -542,7 +546,11 @@
           </svg>
         </div>
         <div class="brand-text">
+<<<<<<< HEAD
           <div class="brand-name">XI RPL 2</div>
+=======
+          <div class="brand-name">XI Rekayasa Perangkat Lunak</div>
+>>>>>>> origin/adjie
           <div class="brand-sub">Kelompok 9</div>
         </div>
       </div>
@@ -571,10 +579,17 @@
 
 <section class="hero">
   <div class="container">
+<<<<<<< HEAD
     <div class="hero-eyebrow">SMKN 1 Garut</div>
     <h1>Profile <span class="accent">Anggota Tim</span></h1>
     <p class="hero-desc">
       Siswa kelas XI RPL 2 yang sedang belajar kolaborasi tim menggunakan Git dan GitHub.
+=======
+    <div class="hero-eyebrow">SMKN 1 GARUT</div>
+    <h1>Profile <span class="accent">Anggota Tim</span></h1>
+    <p class="hero-desc">
+      Kelas XI Rekayasa Perangkat Lunak yang berprestasi, pernah juara 1 Teater dan juara 2 Padus, serta memiliki banyak murid berprestasi.
+>>>>>>> origin/adjie
     </p>
     <div class="hero-topik">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -641,7 +656,11 @@
               </svg>
               rakaXPPL2/Website-Profil-Kelas-XI-RPL
             </div>
+<<<<<<< HEAD
             <p class="repo-desc">Repository utama untuk project kelompok 9 XI RPL 2</p>
+=======
+            <p class="repo-desc">Repository utama untuk project kelompok 9 XI Rekayasa Perangkat Lunak</p>
+>>>>>>> origin/adjie
             <div class="repo-meta">
               <span class="repo-lang">
                 <span class="lang-dot" style="background: #f1e05a;"></span>
