@@ -11,9 +11,9 @@ class AnggotaController extends Controller
             'nama' => 'Raka Raditya Karim',
             'inisial' => 'R',
             'role' => 'Cyber Security Enthusiast',
-            'kelas' => 'XI RPL 2',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
             'jurusan' => 'Rekayasa Perangkat Lunak',
-            'sekolah' => 'SMKN 1 Garut',
+            'sekolah' => 'SMKN 1 GARUT',
             'lokasi' => 'Garut, Indonesia',
             'minat' => ['Cyber Security', 'IoT', 'CAD', 'Pemrograman'],
             'focus' => 'Cyber Security, IoT, CAD',
@@ -26,7 +26,7 @@ class AnggotaController extends Controller
                 'bidang' => 4,
                 'tahun' => 2
             ],
-            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI RPL 2 di SMKN 1 Garut, tertarik pada cyber security, IoT, CAD, dan pemrograman. Aktif mengikuti kompetisi teknologi dan pernah menjadi juara di salah satu lomba bidang teknologi.',
+            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI Rekayasa Perangkat Lunak di SMKN 1 GARUT, tertarik pada cyber security, IoT, CAD, dan pemrograman. Aktif mengikuti kompetisi teknologi dan pernah menjadi juara di salah satu lomba bidang teknologi.',
             'saat_ini' => [
                 ['text' => 'Belajar Jaringan & Cyber Security lebih dalam', 'color' => 'green'],
                 ['text' => 'Mengerjakan project IoT sederhana', 'color' => 'blue'],
@@ -55,9 +55,9 @@ class AnggotaController extends Controller
             'nama' => 'Nama Anggota 2',
             'inisial' => 'A',
             'role' => 'Full Stack Developer',
-            'kelas' => 'XI RPL 2',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
             'jurusan' => 'Rekayasa Perangkat Lunak',
-            'sekolah' => 'SMKN 1 Garut',
+            'sekolah' => 'SMKN 1 GARUT',
             'lokasi' => 'Garut, Indonesia',
             'minat' => ['Web Development', 'Mobile App', 'Database', 'UI/UX'],
             'focus' => 'Web Development, Mobile App',
@@ -70,7 +70,7 @@ class AnggotaController extends Controller
                 'bidang' => 3,
                 'tahun' => 2
             ],
-            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI RPL 2 di SMKN 1 Garut. Tertarik pada pengembangan web dan aplikasi mobile.',
+            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI Rekayasa Perangkat Lunak di SMKN 1 GARUT. Tertarik pada pengembangan web dan aplikasi mobile.',
             'saat_ini' => [
                 ['text' => 'Belajar Laravel dan React', 'color' => 'blue'],
                 ['text' => 'Mengerjakan project web pribadi', 'color' => 'green'],
@@ -98,9 +98,9 @@ class AnggotaController extends Controller
             'nama' => 'Nama Anggota 3',
             'inisial' => 'B',
             'role' => 'Backend Developer',
-            'kelas' => 'XI RPL 2',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
             'jurusan' => 'Rekayasa Perangkat Lunak',
-            'sekolah' => 'SMKN 1 Garut',
+            'sekolah' => 'SMKN 1 GARUT',
             'lokasi' => 'Garut, Indonesia',
             'minat' => ['Backend', 'API', 'Cloud', 'DevOps'],
             'focus' => 'Backend, API Development',
@@ -113,7 +113,7 @@ class AnggotaController extends Controller
                 'bidang' => 2,
                 'tahun' => 2
             ],
-            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI RPL 2 di SMKN 1 Garut. Fokus pada pengembangan backend dan API.',
+            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI Rekayasa Perangkat Lunak di SMKN 1 GARUT. Fokus pada pengembangan backend dan API.',
             'saat_ini' => [
                 ['text' => 'Belajar Node.js dan Express', 'color' => 'green'],
                 ['text' => 'Mempelajari Docker dan Kubernetes', 'color' => 'blue'],
@@ -134,9 +134,9 @@ class AnggotaController extends Controller
             'nama' => 'Nama Anggota 4',
             'inisial' => 'C',
             'role' => 'UI/UX Designer',
-            'kelas' => 'XI RPL 2',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
             'jurusan' => 'Rekayasa Perangkat Lunak',
-            'sekolah' => 'SMKN 1 Garut',
+            'sekolah' => 'SMKN 1 GARUT',
             'lokasi' => 'Garut, Indonesia',
             'minat' => ['UI Design', 'UX Research', 'Prototyping', 'Branding'],
             'focus' => 'UI/UX Design, Prototyping',
@@ -149,7 +149,7 @@ class AnggotaController extends Controller
                 'bidang' => 3,
                 'tahun' => 2
             ],
-            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI RPL 2 di SMKN 1 Garut. Memiliki passion dalam desain UI/UX dan prototyping.',
+            'bio' => 'Siswa Rekayasa Perangkat Lunak kelas XI Rekayasa Perangkat Lunak di SMKN 1 GARUT. Memiliki passion dalam desain UI/UX dan prototyping.',
             'saat_ini' => [
                 ['text' => 'Membuat wireframe dan mockup', 'color' => 'purple'],
                 ['text' => 'Belajar prinsip UX Research', 'color' => 'blue'],
@@ -186,8 +186,8 @@ class AnggotaController extends Controller
         return view('home', [
             'anggotaList' => $this->anggota,
             'teamName' => 'Kelompok 9',
-            'kelas' => 'XI RPL 2',
-            'sekolah' => 'SMKN 1 Garut',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
+            'sekolah' => 'SMKN 1 GARUT',
             'topik' => 'Kolaborasi Tim Menggunakan Git dan GitHub'
         ]);
     }
@@ -197,8 +197,8 @@ class AnggotaController extends Controller
         return view('profil', [
             'anggotaList' => $this->anggota,
             'teamName' => 'Kelompok 9',
-            'kelas' => 'XI RPL 2',
-            'sekolah' => 'SMKN 1 Garut',
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
+            'sekolah' => 'SMKN 1 GARUT',
             'topik' => 'Kolaborasi Tim Menggunakan Git dan GitHub'
         ]);
     }
@@ -214,8 +214,8 @@ class AnggotaController extends Controller
         return view('detail', [
             'anggota' => $anggota,
             'teamName' => 'Kelompok 9',
-            'kelas' => 'XI RPL 2',
-            'sekolah' => 'SMKN 1 Garut'
+            'kelas' => 'XI Rekayasa Perangkat Lunak',
+            'sekolah' => 'SMKN 1 GARUT'
         ]);
     }
 }
