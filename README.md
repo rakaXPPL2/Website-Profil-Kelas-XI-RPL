@@ -180,7 +180,7 @@ git pull origin main
 | Raka Raditya | main | Project Manager, Merge & Review |
 | Arkan Muhammad Nazril | fitur-profil | profil.blade.php |
 | Radit El Adzany | fitur-anggota | home.blade.php, detail.blade.php |
-| Adjie Noer Wahad | fitur-kontak | kontak.html |
+| Adjie Noer Wahad | fitur-kontak | kontak.blade.php |
 
 ---
 
@@ -256,15 +256,42 @@ php artisan serve
 - [x] Pull Request di-merge
 
 ### Produk
-- [x] profil.blade.php (Laravel)
-- [x] home.blade.php (Laravel)
-- [x] detail.blade.php (Laravel)
+- [x] profil.blade.php (Laravel) → Halaman Profil Kelas
+- [x] home.blade.php (Laravel) → Halaman Daftar Anggota
+- [x] detail.blade.php (Laravel) → Halaman Detail Anggota
+- [x] kontak.blade.php (Laravel) → Halaman Kontak
 - [x] README.md
 
 ### Kolaborasi
 - [x] Semua anggota berkontribusi
 - [x] Pembagian tugas jelas
 - [x] Masalah didiskusikan
+
+---
+
+## 📸 BUKTI PENGERJAAN (Screenshot yang Diperlukan)
+
+Berdasarkan LKPD 4, berikut bukti screenshot yang perlu dikumpulkan:
+
+| No | Bukti | Screenshot yang Diperlukan |
+|----|-------|---------------------------|
+| 1 | **Repository GitHub** | Screenshot halaman repository di github.com |
+| 2 | **Daftar Branch** | Screenshot tab "Branches" atau output `git branch` |
+| 3 | **Commit** | Screenshot tab "Commits" di GitHub |
+| 4 | **Pull Request** | Screenshot Pull Request yang sudah dibuat |
+| 5 | **Code Review** | Screenshot komentar review di Pull Request |
+| 6 | **Merge** | Screenshot Pull Request yang sudah di-merge |
+| 7 | **Hasil Akhir Main** | Screenshot branch main dengan semua file sudah merge |
+
+### Cara Mengambil Screenshot Bukti:
+
+1. **Repository GitHub**: Buka https://github.com/rakaXPPL2/Website-Profil-Kelas-XI-RPL
+2. **Daftar Branch**: Klik tab "branches" atau jalankan `git branch -a`
+3. **Commit**: Klik tab "commits" di repository
+4. **Pull Request**: Klik tab "Pull requests" → pilih PR yang ada
+5. **Code Review**: Buka PR → lihat bagian komentar review
+6. **Merge**: Buka PR yang sudah di-merge → lihat status "Merged"
+7. **Hasil Akhir**: Clone/pull terbaru → jalankan `php artisan serve` → screenshot hasilnya
 
 ---
 
