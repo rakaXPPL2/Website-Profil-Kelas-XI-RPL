@@ -1,678 +1,350 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Website Profil XI RPL - Kelompok 9
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website Profil Kelas XI Rekayasa Perangkat Lunak SMKN 1 Garut. Proyek pembelajaran kolaborasi tim menggunakan Git dan GitHub (LKPD 4).
 
-## About Laravel
+## 📚 LKPD 4 - Kolaborasi Tim Menggunakan Git dan GitHub
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Identitas Pembelajaran
+| Informasi | Detail |
+|-----------|--------|
+| **Satuan Pendidikan** | SMKN 1 Garut |
+| **Program Keahlian** | Pengembangan Perangkat Lunak dan Gim |
+| **Konsentrasi Keahlian** | Rekayasa Perangkat Lunak (RPL) |
+| **Mata Pelajaran** | Dasar-Dasar Pengembangan Perangkat Lunak dan Gim |
+| **Fase/Kelas** | F / XI RPL |
+| **Alokasi Waktu** | 2 × 45 menit |
+| **Model** | Pembelajaran Mandiri Berbasis Proyek |
+| **Nomor Kelompok** | 9 |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Tujuan Pembelajaran
+Setelah menyelesaikan LKPD ini, peserta didik mampu:
+1. Menjelaskan konsep kolaborasi dalam pengembangan perangkat lunak
+2. Menjelaskan fungsi branch dalam Git
+3. Meng-clone repository GitHub
+4. Membuat dan menggunakan branch
+5. Mengembangkan fitur secara terpisah dari branch utama
+6. Membuat commit yang bermakna
+7. Melakukan push branch ke GitHub
+8. Membuat Pull Request
+9. Melakukan Code Review sederhana
+10. Memperbaiki kode berdasarkan hasil review
+11. Melakukan merge Pull Request
+12. Melakukan sinkronisasi repository menggunakan git pull
+13. Mengidentifikasi konflik sederhana
+14. Menyelesaikan konflik secara mandiri
+15. Menerapkan etika kerja kolaboratif dalam pengembangan perangkat lunak
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 👥 Profil Kelas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| Informasi | Detail |
+|-----------|--------|
+| **Nama Kelas** | XI Rekayasa Perangkat Lunak |
+| **Nama Sekolah** | SMKN 1 GARUT |
+| **Program Keahlian** | Pengembangan Perangkat Lunak dan Gim |
+| **Konsentrasi Keahlian** | Rekayasa Perangkat Lunak (RPL) |
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Deskripsi Kelas
+Kelas XI RPL adalah kelas yang terdiri dari siswa-siswi berprestasi di bidang Teknologi Informasi. Kami pernah menjuarai **Juara 1 Teater** dan **Juara 2 Padus**. Memiliki banyak murid yang berprestasi di berbagai bidang.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### Visi Kelas
+Berusaha menjadi lebih baik dan mengikuti perlombaan antar jurusan untuk menunjukkan kemampuan terbaik dari kelas XI RPL dalam bidang pengembangan perangkat lunak.
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🛠️ Anggota Tim
 
-```bash
-composer require laravel/boost --dev
+### 1. Raka Raditya - Project Manager
+| Detail | Informasi |
+|--------|-----------|
+| **Nama** | Raka Raditya |
+| **Peran** | Project Manager |
+| **Kelas** | XI RPL 2 |
+| **Tanggal Lahir** | 07 Maret 2010 |
+| **No. Telepon** | 0895-0781-8994 |
+| **Email** | rakaraditya4750@gmail.com |
+| **Instagram** | @akaachenn |
+| **GitHub** | [rakaXPPL2](https://github.com/rakaXPPL2) |
 
-php artisan boost:install
+### 2. Arkan Muhammad Nazril - Developer Profil
+| Detail | Informasi |
+|--------|-----------|
+| **Nama** | Arkan Muhammad Nazril |
+| **Peran** | Developer Profil |
+| **Kelas** | XI RPL 2 |
+| **Tanggal Lahir** | 07 April 2009 |
+| **No. Telepon** | 0857-2494-0975 |
+| **Email** | arkanmuhammadnazril@gmail.com |
+| **Instagram** | @arknnzril |
+| **GitHub** | [Arkannaz](https://github.com/Arkannaz) |
+
+### 3. Radit El Adzany - Developer Anggota
+| Detail | Informasi |
+|--------|-----------|
+| **Nama** | Radit El Adzany |
+| **Peran** | Developer Anggota |
+| **Kelas** | XI RPL 2 |
+| **Tanggal Lahir** | 24 April 2010 |
+| **No. Telepon** | 0831-6619-1424 |
+| **Email** | radithyaell2@gmail.com |
+| **Instagram** | @radityaaell_ |
+| **GitHub** | [radithyaell](https://github.com/radithyaell) |
+
+### 4. Adjie Noer Wahad - Developer Kontak
+| Detail | Informasi |
+|--------|-----------|
+| **Nama** | Adjie Noer Wahad |
+| **Peran** | Developer Kontak |
+| **Kelas** | XI RPL 2 |
+| **Tanggal Lahir** | 26 Juli 2009 |
+| **No. Telepon** | 0831-8057-0306 |
+| **Email** | ajieniedek@gmail.com |
+| **Instagram** | @ajienrwhd |
+| **GitHub** | [ajieniedek-alt](https://github.com/ajieniedek-alt) |
+
+---
+
+## 💻 Struktur Proyek (Laravel)
+
+```
+Website-Profil-Kelas-XI-RPL/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       └── AnggotaController.php    # Controller utama
+│   └── Models/
+│       └── User.php
+├── resources/
+│   └── views/
+│       ├── profil.blade.php             # Halaman profil kelas
+│       ├── home.blade.php               # Halaman daftar anggota
+│       ├── detail.blade.php             # Halaman detail anggota
+│       └── welcome.blade.php            # Welcome page Laravel
+├── routes/
+│   └── web.php                          # Route definitions
+├── database/
+│   └── migrations/                      # Database migrations
+├── composer.json                        # Laravel 13.x dependencies
+├── package.json                         # Node.js dependencies
+└── README.md                            # Dokumentasi proyek
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 🔧 Teknologi yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Teknologi | Keterangan |
+|-----------|------------|
+| **Framework** | Laravel 13.17 |
+| **PHP Version** | 8.3+ |
+| **Database** | SQLite (default) |
+| **Frontend** | Blade Template, Tailwind CSS, Vanilla JS |
+| **Version Control** | Git & GitHub |
+| **Font** | Google Fonts (Inter, JetBrains Mono) |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🔄 Alur Kerja Git & GitHub
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-LEMBAR KERJA PESERTA DIDIK (LKPD) 4
-KOLABORASI TIM MENGGUNAKAN GIT & GITHUB
-Simulasi Workflow Pengembangan Perangkat Lunak
-A. IDENTITAS PEMBELAJARAN
-Satuan Pendidikan: SMKN 1 Garut
-Program Keahlian: Pengembangan Perangkat Lunak dan Gim
-Konsentrasi Keahlian: Rekayasa Perangkat Lunak (RPL)
-Mata Pelajaran: Dasar-Dasar Pengembangan Perangkat Lunak dan Gim
-Fase/Kelas: F / XI RPL
-Materi: Kolaborasi Tim Menggunakan Git dan GitHub
-Alokasi Waktu: 2 × 45 menit
-Model: Pembelajaran Mandiri Berbasis Proyek
-B. IDENTITAS PESERTA DIDIK
-Nama: ______
-Kelas: _______
-Kelompok: __________
-Nomor Kelompok: __________
-Nama Repository: __________
-URL Repository: _____
-Nama Project Manager: _____
-C. TUJUAN PEMBELAJARAN
-Setelah menyelesaikan LKPD ini, peserta didik mampu:
-Menjelaskan konsep kolaborasi dalam pengembangan perangkat lunak.
-Menjelaskan fungsi branch dalam Git.
-Meng-clone repository GitHub.
-Membuat dan menggunakan branch.
-Mengembangkan fitur secara terpisah dari branch utama.
-1.
-2.
-3.
-4.
-5.
-1
-Membuat commit yang bermakna.
-Melakukan push branch ke GitHub.
-Membuat Pull Request.
-Melakukan Code Review sederhana.
-Memperbaiki kode berdasarkan hasil review.
-Melakukan merge Pull Request.
-Melakukan sinkronisasi repository menggunakan git pull .
-Mengidentifikasi konflik sederhana.
-Menyelesaikan konflik secara mandiri.
-Menerapkan etika kerja kolaboratif dalam pengembangan perangkat lunak.
-D. KONSEP YANG HARUS DIPAHAMI
-Sebelum memulai praktik, pahami hubungan berikut:
-Repository
- │
- ├── main
- │
- ├── fitur-profil
- │
- ├── fitur-anggota
- │
- └── fitur-kontak
-Setiap developer bekerja pada branch masing-masing.
-Alur kerja:
-Clone
- ↓
-Create Branch
- ↓
-Coding
- ↓
-git add
- ↓
-git commit
- ↓
-git push
- ↓
-Pull Request
- ↓
-Code Review
- ↓
-Perbaikan
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-2
- ↓
-Merge
- ↓
-git pull
-Jangan mengerjakan fitur langsung pada main .
-E. SKENARIO INDUSTRI
-Bayangkan kelompok kalian adalah sebuah tim developer pada perusahaan software.
-Kalian mendapatkan proyek:
-"Website Profil Kelas XI RPL"
-Klien meminta website sederhana yang menampilkan:
-Profil kelas
-Daftar anggota
-Informasi proyek
-Kontak
-Dokumentasi proyek
-Project Manager memberikan aturan:
-"Setiap developer wajib mengerjakan fitur melalui branch masing-masing. Tidak
-diperbolehkan melakukan perubahan langsung pada main ."
-Setelah fitur selesai:
-Developer → Pull Request → Code Review → Perbaikan → Merge
-Kalian akan mensimulasikan workflow tersebut.
-F. PEMBAGIAN PERAN
-Bentuk kelompok terdiri dari 3–4 orang.
-Jika terdiri dari 4 orang:
-Anggota 1 – Project Manager
-Tanggung jawab:
-Membuat repository.
-•
-•
-•
-•
-•
-•
-3
-Menentukan pembagian tugas.
-Memeriksa Pull Request.
-Melakukan Code Review.
-Melakukan Merge.
-Anggota 2 – Developer Profil
-Tugas:
-profil.html
-Anggota 3 – Developer Anggota
-Tugas:
-anggota.html
-Anggota 4 – Developer Kontak
-Tugas:
-kontak.html
-Semua anggota tetap bertanggung jawab terhadap hasil proyek.
-G. ATURAN KERJA
-Setiap anggota wajib memiliki branch.
-Jangan mengubah main secara langsung.
-Setiap fitur minimal memiliki satu commit.
-Pesan commit harus jelas.
-Setiap fitur dikirim melalui Pull Request.
-Pull Request harus melalui review.
-Pull Request yang memiliki kesalahan harus diperbaiki.
-Setiap anggota wajib memberikan kontribusi.
-Semua anggota wajib memahami workflow yang digunakan.
-Jangan menghapus repository ketika mengalami error.
-H. CHALLENGE 1
-Membuat Repository
-Project Manager membuat repository baru di GitHub.
-Gunakan nama:
-•
-•
-•
-•
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-4
-website-profil-xi-rpl-[nomor-kelompok]
-Contoh:
-website-profil-xi-rpl-03
-Repository dibuat sebagai:
-Public
-Tambahkan:
-README.md
-Isi awal:
-# Website Profil XI RPL
-Website ini merupakan proyek pembelajaran
-kolaborasi Git dan GitHub.
-## Anggota Tim
-1. Nama - Project Manager
-2. Nama - Developer
-3. Nama - Developer
-4. Nama - Developer
-CHECKPOINT 1
-[ ] Repository berhasil dibuat
-[ ] Repository bersifat Public
-[ ] README tersedia
-[ ] Semua anggota sudah dicantumkan
-URL repository:
-I. CHALLENGE 2
+```
 Clone Repository
-Semua anggota melakukan clone.
-•
-•
-•
-•
-5
-git clone URL_REPOSITORY
-Masuk ke folder:
-cd nama-repository
-Periksa:
-git status
-Pertanyaan
-Apa arti hasil git status ?
-CHECKPOINT 2
-[ ] Repository berhasil di-clone
-[ ] Folder dapat dibuka
-[ ] git status berhasil dijalankan
-J. CHALLENGE 3
-Membuat Branch
-Setiap anggota membuat branch.
-Developer Profil
-git switch -c fitur-profil
-Developer Anggota
-git switch -c fitur-anggota
-Developer Kontak
-git switch -c fitur-kontak
-•
-•
-•
-6
-Periksa:
-git branch
-Branch aktif ditandai dengan:
-*
-Catat:
-Nama Branch
-Pertanyaan Analisis
-Mengapa setiap developer tidak langsung bekerja pada main ?
-K. CHALLENGE 4
-Mengembangkan Fitur
-1. Developer Profil
-Buat:
-profil.html
-Minimal berisi:
-Nama kelas
-Nama sekolah
-Program keahlian
-Deskripsi kelas
-Visi kelas
-Contoh struktur:
-•
-•
-•
-•
-•
-7
-<!DOCTYPE html>
-<html>
-<head>
-<title>Profil XI RPL</title>
-</head>
-<body>
-<h1>XI Rekayasa Perangkat Lunak</h1>
-<h2>SMKN 1 Garut</h2>
-<p>
-Kami adalah siswa kelas XI RPL
-yang mempelajari pengembangan perangkat lunak.
-</p>
-</body>
-</html>
-L. DEVELOPER ANGGOTA
-Buat:
-anggota.html
-Tampilkan:
-Nama anggota
-Jabatan/peran
-Deskripsi singkat
-Contoh:
-<h1>Anggota Tim</h1>
-<ul>
-<li>Nama 1 - Project Manager</li>
-<li>Nama 2 - Developer</li>
-<li>Nama 3 - Developer</li>
-</ul>
-•
-•
-•
-8
-M. DEVELOPER KONTAK
-Buat:
-kontak.html
-Minimal berisi:
-Email
-Instagram
-Alamat sekolah
-Contoh:
-<h1>Kontak</h1>
-<p>Email: xi.rpl@example.com</p>
-<p>Instagram: @xi_rpl</p>
-<p>SMKN 1 Garut</p>
-N. CHALLENGE 5
-Commit
-Setelah fitur selesai:
-git status
-Kemudian:
+      ↓
+Create Branch (per fitur)
+      ↓
+Coding pada Branch
+      ↓
 git add .
-Lakukan commit.
-Contoh:
-git commit -m "Menambahkan halaman profil"
-Contoh lainnya:
-•
-•
-•
-9
-git commit -m "Menambahkan daftar anggota"
-git commit -m "Menambahkan halaman kontak"
-Pertanyaan
-Apa perbedaan pesan commit berikut?
-git commit -m "update"
-dan:
-git commit -m "Menambahkan halaman profil kelas"
-Mana yang lebih baik?
-O. CHALLENGE 6
-Push Branch
-Push branch ke GitHub:
+      ↓
+git commit -m "Pesan commit yang jelas"
+      ↓
 git push -u origin NAMA_BRANCH
-Contoh:
-git push -u origin fitur-profil
-Buka GitHub.
-Pastikan branch muncul.
-10
-CHECKPOINT 3
-[ ] Branch muncul di GitHub
-[ ] File fitur muncul
-[ ] Commit terlihat
-[ ] Tidak ada perubahan langsung pada main
-P. CHALLENGE 7
-Pull Request
-Developer membuat Pull Request.
-Buka:
-Pull Requests → New Pull Request
-Pilih:
-base: main
-compare: fitur-profil
-Judul:
-Menambahkan halaman profil kelas
-Deskripsi:
-## Perubahan
-- Menambahkan profil kelas
-- Menambahkan informasi program keahlian
-## Tujuan
-Menambahkan halaman profil untuk website XI RPL.
-Klik:
+      ↓
 Create Pull Request
-•
-•
-•
-•
-11
-Q. CHALLENGE 8
-CODE REVIEW
-Project Manager bertugas melakukan review.
-Periksa:
-Struktur
-[ ] Nama file benar
-[ ] HTML memiliki struktur yang benar
-[ ] Tidak ada kode yang tidak diperlukan
-Isi
-[ ] Informasi lengkap
-[ ] Tidak ada kesalahan penulisan
-[ ] Sesuai dengan tugas
-Kualitas
-[ ] Kode mudah dibaca
-[ ] Indentasi cukup rapi
-[ ] Tidak ada informasi yang tidak relevan
-TULISKAN HASIL REVIEW
-Nama Developer:
-Hasil Review:
-[ ] Approve
-[ ] Request Changes
-Komentar Reviewer:
-R. CHALLENGE 9
-MELAKUKAN PERBAIKAN
-Jika reviewer memilih:
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-12
-Request Changes
-Developer membaca komentar.
-Lakukan perbaikan pada branch yang sama.
-Kemudian:
-git add .
-git commit -m "Memperbaiki hasil code review"
-git push
-Pull Request akan diperbarui otomatis.
-Project Manager melakukan review kembali.
-S. CHALLENGE 10
-MERGE
-Jika Pull Request sudah memenuhi kriteria:
-Project Manager memilih:
-Approve → Merge Pull Request
-Kemudian pastikan:
-[ ] Pull Request berhasil di-merge
-[ ] Fitur masuk ke main
-[ ] Tidak ada perubahan yang hilang
-T. CHALLENGE 11
-SINKRONISASI
-Setelah fitur anggota lain berhasil di-merge:
-Setiap anggota menjalankan:
-•
-•
-•
-13
+      ↓
+Code Review (Project Manager)
+      ↓
+Perbaikan (jika diperlukan)
+      ↓
+Merge Pull Request
+      ↓
 git switch main
-Kemudian:
+      ↓
 git pull origin main
-Periksa apakah file berikut sudah tersedia:
-profil.html
-anggota.html
-kontak.html
-U. PERTANYAAN ANALISIS
-1. Apa fungsi git pull ?
-2. Apa yang terjadi jika programmer tidak melakukan git pull ?
-3. Mengapa main harus dijaga agar tetap stabil?
-V. CHALLENGE 12
-SIMULASI CONFLICT
-Sekarang lakukan tantangan tambahan.
-Tujuan tantangan ini adalah memahami bahwa konflik merupakan hal normal dalam pengembangan
-perangkat lunak.
-Dua anggota mengubah bagian yang sama pada README.md .
-Developer A
-Menambahkan:
-14
-Website dikembangkan menggunakan HTML.
-Developer B
-Menambahkan pada bagian yang sama:
-Website dikembangkan menggunakan HTML5.
-Lakukan commit pada masing-masing branch.
-Kemudian buat Pull Request.
-Amati apakah GitHub mendeteksi konflik.
-W. JIKA TERJADI CONFLICT
-Git dapat menampilkan:
-<<<<<<< HEAD
-versi A
-=======
-versi B
->>>>>>> branch
-Tugas developer:
-Membaca kedua perubahan.
-Menentukan isi yang benar.
-Menghapus tanda conflict.
-Menyimpan file.
-Melakukan commit.
-Push kembali.
-X. PERTANYAAN CONFLICT
-1. Mengapa conflict terjadi?
-2. Apakah conflict berarti Git rusak?
-1.
-2.
-3.
-4.
-5.
-6.
-15
-3. Siapa yang harus menentukan versi kode yang benar?
-4. Mengapa komunikasi antar programmer penting?
-Y. TROUBLESHOOTING MANDIRI
-Jika mengalami error, jangan langsung menghapus repository.
-Ikuti prosedur:
-Langkah 1
-Baca pesan error.
-Langkah 2
-Salin bagian penting dari error.
-Langkah 3
-Cari penyebabnya.
-Contoh:
-git push rejected non-fast-forward
-Cari:
-How to fix git push rejected non-fast-forward
-Langkah 4
-Diskusikan dengan anggota kelompok.
-Langkah 5
-Gunakan AI jika diperlukan.
-Berikan informasi:
-16
-Saya sedang belajar Git.
-Saya menjalankan:
-git push origin fitur-profil
-Kemudian muncul error:
-[pesan error]
-Kondisi repository:
-[jelaskan kondisi]
-Z. TROUBLESHOOTING LOG
-No Error/Masalah Penyebab Solusi Berhasil
-1
-2
-3
-AA. FINAL CHECKLIST
-Sebelum mengumpulkan, pastikan:
-Repository
-[ ] Repository Public
-[ ] Nama repository benar
-[ ] README tersedia
-[ ] Semua anggota tercantum
-Git
-[ ] Setiap anggota memiliki branch
-[ ] Tidak ada pekerjaan langsung di main
-[ ] Commit memiliki pesan yang jelas
-[ ] Branch berhasil di-push
-GitHub
-[ ] Pull Request dibuat
-[ ] Pull Request direview
-[ ] Ada komentar review
-[ ] Ada perbaikan jika diperlukan
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-17
-[ ] Pull Request di-merge
-Produk
-[ ] profil.html
-[ ] anggota.html
-[ ] kontak.html
-[ ] README.md
-Kolaborasi
-[ ] Semua anggota berkontribusi
-[ ] Pembagian tugas jelas
-[ ] Masalah didiskusikan
-[ ] Troubleshooting dicatat
-AB. BUKTI PENGERJAAN
-Setiap kelompok mengumpulkan screenshot:
-Bukti 1
-Repository GitHub
-Bukti 2
-Daftar branch
-Bukti 3
-Commit
-Bukti 4
-Pull Request
-Bukti 5
-Code Review
-Bukti 6
-Merge
-Bukti 7
-Hasil akhir main
-•
-•
-•
-•
-•
-•
-•
-•
-•
-18
-URL repository:
-AC. REFLEKSI INDIVIDU
-Jawablah berdasarkan pengalaman kalian sendiri.
-1. Apa perbedaan bekerja sendiri dengan bekerja menggunakan Git dan GitHub?
-2. Apa manfaat branch?
-3. Mengapa Pull Request diperlukan?
-4. Apa manfaat Code Review?
-5. Error apa yang paling sulit kalian selesaikan?
-6. Bagaimana kalian menemukan solusinya?
-7. Apa kontribusi terbesar kalian dalam kelompok?
-8. Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan
-kalian pertahankan?
-19
-AD. PENILAIAN
-1. Keterampilan Git & GitHub — 40%
-Kompetensi Bobot
-Clone repository 5
-Membuat branch 5
-Commit 5
-Push 5
-Pull Request 10
-Code Review 5
-Merge & Pull 5
-2. Produk — 20%
-Aspek Bobot
-Kelengkapan fitur 10
-Kerapian kode 5
-Dokumentasi 5
-3. Kolaborasi — 25%
-Aspek Bobot
-Pembagian tugas 5
-Kontribusi 10
-Komunikasi 5
-Tanggung jawab 5
-4. Refleksi & Problem Solving — 15%
-Aspek Bobot
-Pemahaman konsep 5
-Kemampuan troubleshooting 5
-Refleksi 5
-TOTAL: 100
-20
-AE. REFLEKSI AKHIR
-Lengkapi kalimat berikut:
-Sebelum belajar GitHub, saya berpikir bahwa...
-Setelah melakukan kolaborasi dengan GitHub, saya memahami bahwa...
-Kesalahan/error yang saya alami mengajarkan saya bahwa...
-Jika saya bekerja sebagai programmer dalam sebuah tim, saya akan...
-AF. PESAN UNTUK PESERTA DIDIK
-"JANGAN TAKUT ERROR."
-Dalam dunia pengembangan perangkat lunak, error bukan tanda bahwa kalian gagal.
-Error adalah informasi.
-Programmer profesional tidak selalu mengetahui jawabannya.
-Yang membedakan programmer adalah kemampuannya untuk:
-Membaca masalah → mencari informasi → mencoba solusi → menguji → memperbaiki →
-mendokumentasikan.
-Hari ini kalian tidak sedang sekadar belajar GitHub.
-Kalian sedang berlatih cara bekerja sebagai developer dalam sebuah tim.
-Selamat bekerja, berdiskusi, bereksperimen, dan memecahkan masalah.
->>>>>>> origin/adjie
+```
+
+### Pembagian Branch per Anggota
+
+| Anggota | Branch | Fitur |
+|---------|--------|-------|
+| Raka Raditya | main | Project Manager, Merge & Review |
+| Arkan Muhammad Nazril | fitur-profil | profil.blade.php |
+| Radit El Adzany | fitur-anggota | home.blade.php, detail.blade.php |
+| Adjie Noer Wahad | fitur-kontak | kontak.html |
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+### Prerequisites
+- PHP 8.3+
+- Composer
+- Node.js & npm
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/rakaXPPL2/Website-Profil-Kelas-XI-RPL.git
+cd Website-Profil-Kelas-XI-RPL
+
+# Install dependencies
+composer install
+npm install
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Run migrations
+php artisan migrate
+
+# Start development server
+php artisan serve
+```
+
+### Routes yang Tersedia
+
+| Route | Method | Deskripsi |
+|-------|--------|-----------|
+| `/` | GET | Halaman profil kelas |
+| `/anggota` | GET | Halaman daftar anggota |
+| `/anggota/{id}` | GET | Halaman detail anggota |
+
+---
+
+## 📞 Kontak
+
+| Kontak | Informasi |
+|--------|-----------|
+| **Email** | rakaraditya4750@gmail.com |
+| **Instagram** | @akaachenn |
+| **Alamat Sekolah** | SMKN 1 Garut, Jalan Cimanuk Nomor 309A, Kelurahan Pataruman, Kecamatan Tarogong Kidul, Kabupaten Garut, Jawa Barat |
+
+---
+
+## 📋 Checklist Pengerjaan (LKPD 4)
+
+### Repository
+- [x] Repository Public
+- [x] Nama repository: website-profil-xi-rpl-09
+- [x] README tersedia
+- [x] Semua anggota tercantum
+
+### Git
+- [x] Setiap anggota memiliki branch
+- [x] Tidak ada pekerjaan langsung di main
+- [x] Commit memiliki pesan yang jelas
+- [x] Branch berhasil di-push
+
+### GitHub
+- [x] Pull Request dibuat
+- [x] Pull Request direview
+- [x] Ada komentar review
+- [x] Pull Request di-merge
+
+### Produk
+- [x] profil.blade.php (Laravel)
+- [x] home.blade.php (Laravel)
+- [x] detail.blade.php (Laravel)
+- [x] README.md
+
+### Kolaborasi
+- [x] Semua anggota berkontribusi
+- [x] Pembagian tugas jelas
+- [x] Masalah didiskusikan
+
+---
+
+## 📖 REFLEKSI KELOMPOK
+
+### A. Refleksi Akhir (Kelompok 9)
+
+**1. Sebelum belajar GitHub, saya berpikir bahwa...**
+> Kami berpikir bahwa GitHub hanyalah tempat menyimpan kode secara online seperti Google Drive. Kami tidak mengetahui bahwa GitHub memiliki fitur kolaborasi yang sangat powerful seperti branch, Pull Request, dan Code Review. Kami juga mengira bahwa bekerja dalam tim hanya cukup dengan membagi tugas dan menggabungkan file secara manual, tanpa perlu Version Control System.
+
+**2. Setelah melakukan kolaborasi dengan GitHub, saya memahami bahwa...**
+> Kami memahami bahwa GitHub adalah alat yang sangat penting dalam pengembangan perangkat lunak. Branch memungkinkan setiap developer bekerja secara terpisah tanpa mengganggu kode utama. Pull Request memastikan setiap perubahan direview sebelum dimerge. Code Review membantu menjaga kualitas kode. Sinkronisasi dengan `git pull` memastikan semua anggota memiliki versi kode terbaru. Kolaborasi yang terstruktur meningkatkan produktivitas dan mengurangi konflik kode.
+
+**3. Kesalahan/error yang saya alami mengajarkan saya bahwa...**
+> Kami mengalami beberapa error selama proses pembelajaran ini:
+> - **Merge conflict** ketika dua branch mengubah file yang sama
+> - **Push rejected** ketika branch tidak up-to-date dengan main
+> - **Branch tersesat** karena lupa switch branch saat mengerjakan fitur
+> 
+> Dari error-error tersebut, kami belajar bahwa:
+> - Selalu `git pull` sebelum mulai bekerja
+> - Selalu membuat branch baru untuk setiap fitur
+> - Komunikasi antar anggota sangat penting agar tidak mengedit file yang sama
+> - Error bukan tanda kegagalan, melainkan kesempatan untuk belajar lebih dalam
+> - Jangan pernah takut error, justru error mengajarkan kita cara kerja yang benar
+
+**4. Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan kalian pertahankan?**
+> - **Selalu menggunakan branch** untuk setiap fitur atau perbaikan
+> - **Selalu melakukan commit dengan pesan yang jelas** agar history dapat dilacak
+> - **Melakukan Code Review** sebelum merge untuk menjaga kualitas kode
+> - **Dokumentasi proyek** yang lengkap
+> - **Komunikasi aktif** dengan tim melalui Pull Request comments
+> - **Menyelesaikan konflik** dengan diskusi, bukan asal pilih salah satu versi
+> - **Tidak pernah push langsung ke main** tanpa proses review
+> - **git pull** selalu sebelum mulai bekerja
+
+---
+
+### B. Pertanyaan Conflict
+
+**1. Mengapa conflict terjadi?**
+> Conflict terjadi ketika dua atau lebih branch mengubah bagian yang sama dari file yang sama. Git tidak dapat secara otomatis menentukan versi mana yang benar, sehingga memerlukan campur tangan developer untuk memutuskan. Dalam kasus kami, conflict terjadi karena kami beberapa kali mengedit file README.md secara bersamaan di branch yang berbeda.
+
+**2. Apakah conflict berarti Git rusak?**
+> Tidak, conflict **bukan berarti Git rusak**. Justru Git bekerja dengan baik dengan mendeteksi perbedaan dan memberitahu kita. Conflict adalah hal yang **normal dan wajar** dalam pengembangan perangkat lunak. Git memastikan tidak ada kode yang hilang secara otomatis - semua versi tetap tersimpan dan developer tinggal memilih versi mana yang akan digunakan.
+
+**3. Siapa yang harus menentukan versi kode yang benar?**
+> Yang menentukan versi kode yang benar adalah **developer yang terkait** (yang membuat branch) dengan **diskusi bersama tim**. Project Manager juga berperan penting dalam Code Review untuk memutuskan versi mana yang paling sesuai dengan kebutuhan proyek. Tidak boleh satu orang saja yang menentukan tanpa berkonsultasi dengan tim.
+
+**4. Mengapa komunikasi antar programmer penting?**
+> Komunikasi antar programmer sangat penting karena:
+> - **Mencegah conflict** - jika saling menginfomasikan file apa yang sedang diedit
+> - **Melakukan Code Review** - saling memberikan feedback untuk meningkatkan kualitas kode
+> - **Pembagian tugas yang jelas** - agar tidak ada pekerjaan yang tumpang tindih
+> - **Menyelesaikan konflik** - memerlukan diskusi untuk menentukan solusi terbaik
+> - **Transfer knowledge** - anggota baru dapat belajar dari anggota berpengalaman
+> - **Efisiensi waktu** - tidak perlu mengulang pekerjaan yang sudah dilakukan orang lain
+> - **Kualitas produk** - hasil akhir lebih baik karena sudah melalui diskusi dan review
+
+---
+
+## 🔗 Link Repository
+
+- **Repository Utama**: [github.com/rakaXPPL2/Website-Profil-Kelas-XI-RPL](https://github.com/rakaXPPL2/Website-Profil-Kelas-XI-RPL)
+- **Repository LKPD**: [github.com/rakaXPPL2/LKPD-4](https://github.com/rakaXPPL2/LKPD-4)
+
+---
+
+## 💬 Pesan untuk Peserta Didik
+
+> **"JANGAN TAKUT ERROR."**
+> 
+> Dalam dunia pengembangan perangkat lunak, error bukan tanda bahwa kalian gagal. Error adalah informasi. Programmer profesional tidak selalu mengetahui jawabannya. Yang membedakan programmer adalah kemampuannya untuk:
+> 
+> **Membaca masalah → mencari informasi → mencoba solusi → menguji → memperbaiki → mendokumentasikan.**
+> 
+> Hari ini kalian tidak sedang sekadar belajar GitHub. Kalian sedang berlatih cara bekerja sebagai developer dalam sebuah tim.
+> 
+> Selamat bekerja, berdiskusi, bereksperimen, dan memecahkan masalah.
+
+---
+
+*Proyek Pembelajaran - SMKN 1 Garut - Kolaborasi Tim Menggunakan Git dan GitHub*
