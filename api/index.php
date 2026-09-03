@@ -27,4 +27,7 @@ if (!is_dir($storagePath)) {
 }
 
 $app->useStoragePath($storagePath);
-$app->handleRequest(Illuminate\Http\Request::capture());
+$response = $app->handleRequest(Illuminate\Http\Request::capture());
+if (method_exists($response, 'send')) {
+    $response->send();
+}
