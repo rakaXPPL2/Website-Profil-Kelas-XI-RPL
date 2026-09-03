@@ -27,6 +27,7 @@ register_shutdown_function(function (): void {
 require __DIR__ . '/../vendor/autoload.php';
 
 $storagePath = '/tmp/laravel-storage';
+putenv('VIEW_COMPILED_PATH=' . $storagePath . '/framework/views');
 
 if (!is_dir($storagePath)) {
 	mkdir($storagePath . '/framework/cache/data', 0755, true);
