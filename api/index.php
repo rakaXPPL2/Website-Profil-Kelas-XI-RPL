@@ -14,6 +14,12 @@ putenv('CACHE_PREFIX=');
 putenv('QUEUE_CONNECTION=sync');
 putenv('LOG_CHANNEL=errorlog');
 
+// No database is used by this app (all data is hardcoded in AnggotaController).
+// Force an in-memory SQLite connection so nothing crashes if anything ever
+// touches the DB layer, since the filesystem here is read-only.
+putenv('DB_CONNECTION=sqlite');
+putenv('DB_DATABASE=:memory:');
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
