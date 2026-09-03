@@ -17,6 +17,13 @@ putenv('LOG_CHANNEL=errorlog');
 putenv('DB_CONNECTION=sqlite');
 putenv('DB_DATABASE=:memory:');
 
+register_shutdown_function(function (): void {
+	$error = error_get_last();
+	if ($error !== null && in_array($error['type'], [E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_PARSE], true)) {
+		error_log(sprintf('Laravel fatal error: %s in %s:%d', $error['message'], $error['file'], $error['line']));
+	}
+});
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $storagePath = '/tmp/laravel-storage';
@@ -31,7 +38,13 @@ if (!is_dir($storagePath)) {
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 $app->useStoragePath($storagePath);
 $app->register(\Illuminate\View\ViewServiceProvider::class);
-$response = $app->handleRequest(Illuminate\Http\Request::capture());
-if ($response instanceof \Symfony\Component\HttpFoundation\Response) {
-	$response->send();
+try {
+	$response = $app->handleRequest(Illuminate\Http\Request::capture());
+	if ($response instanceof \Symfony\Component\HttpFoundation\Response) {
+		$response->send();
+	}
+} catch (\Throwable $exception) {
+	error_log(sprintf('Laravel request error: %s in %s:%d', $exception->getMessage(), $exception->getFile(), $exception->getLine()));
+	http_response_code(500);
+	echo 'Application error';
 }
