@@ -1,8 +1,8 @@
 <?php
 
 if (!isset($_ENV['APP_KEY']) && !getenv('APP_KEY')) {
-	putenv('APP_KEY=base64:8fZ8v3qK1mN5pR7sT9wX2yA4cE6gH0jL');
-	$_ENV['APP_KEY'] = 'base64:8fZ8v3qK1mN5pR7sT9wX2yA4cE6gH0jL';
+	putenv('APP_KEY=base64:exWOZeauMvmVFWddAkyDbZY/Au9l3NDCFAHLa7ENRD0=');
+	$_ENV['APP_KEY'] = 'base64:exWOZeauMvmVFWddAkyDbZY/Au9l3NDCFAHLa7ENRD0=';
 }
 
 putenv('APP_ENV=production');
