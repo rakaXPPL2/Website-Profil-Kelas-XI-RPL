@@ -13,14 +13,43 @@
     uniform vec2 uMouse;
     uniform float uActive;
 
+    #define NUM_LAYER 4.0
+    #define MAT45 mat2(0.7071, -0.7071, 0.7071, 0.7071)
+    #define PERIOD 3.0
+
     float hash21(vec2 p) {
       p = fract(p * vec2(123.34, 456.21));
       p += dot(p, p + 45.32);
       return fract(p.x * p.y);
     }
 
-    float triangle(float value) {
+    float tri(float value) {
       return abs(fract(value) * 2.0 - 1.0);
+    }
+
+    float tris(float value) {
+      return 1.0 - smoothstep(0.0, 1.0, abs(2.0 * fract(value) - 1.0));
+    }
+
+    float trisn(float value) {
+      return 2.0 * tris(value) - 1.0;
+    }
+
+    vec3 hsv2rgb(vec3 color) {
+      vec4 k = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+      vec3 p = abs(fract(color.xxx + k.xyz) * 6.0 - k.www);
+      return color.z * mix(k.xxx, clamp(p - k.xxx, 0.0, 1.0), color.y);
+    }
+
+    float star(vec2 uv, float flare) {
+      float distanceToCenter = length(uv);
+      float result = (0.05 * 0.5) / max(distanceToCenter, 0.001);
+      float rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0));
+      result += rays * flare * 0.5;
+      uv *= MAT45;
+      rays = smoothstep(0.0, 1.0, 1.0 - abs(uv.x * uv.y * 1000.0));
+      result += rays * 0.15 * flare;
+      return result * smoothstep(1.0, 0.2, distanceToCenter);
     }
 
     vec3 starLayer(vec2 uv, float layer) {
@@ -31,40 +60,48 @@
       for (int y = -1; y <= 1; y++) {
         for (int x = -1; x <= 1; x++) {
           vec2 cell = id + vec2(float(x), float(y));
-          float seed = hash21(cell + layer * 17.0);
+          float seed = hash21(cell + layer);
           float size = fract(seed * 345.32);
+          float gloss = tri(0.5 / (PERIOD * seed + 1.0));
+          float flare = smoothstep(0.9, 1.0, size) * gloss;
+          float red = smoothstep(0.2, 1.0, hash21(cell + 1.0)) + 0.2;
+          float blue = smoothstep(0.2, 1.0, hash21(cell + 3.0)) + 0.2;
+          float green = min(red, blue) * seed;
+          vec3 base = vec3(red, green, blue);
+          float hue = atan(base.g - base.r, base.b - base.r) / 6.28318 + 0.5;
+          float saturation = length(base - vec3(dot(base, vec3(0.299, 0.587, 0.114)))) * 0.8;
+          float value = max(max(base.r, base.g), base.b);
+          base = hsv2rgb(vec3(fract(hue + 240.0 / 360.0), saturation, value));
           vec2 drift = vec2(
-            triangle(seed * 34.0 + uTime * 0.08),
-            triangle(seed * 38.0 + uTime * 0.035)
+            tris(seed * 34.0 + uTime / 10.0),
+            tris(seed * 38.0 + uTime / 30.0)
           ) - 0.5;
-          float distanceToStar = length(grid - vec2(float(x), float(y)) - drift * 0.18);
-          float glow = 0.006 / max(distanceToStar, 0.006);
-          float flare = smoothstep(0.88, 1.0, size) * 0.12 / max(distanceToStar, 0.02);
-          float twinkle = 0.75 + 0.25 * triangle(uTime * 0.45 + seed * 6.28);
-          vec3 starColor = mix(vec3(0.72, 0.84, 1.0), vec3(0.42, 0.92, 1.0), seed);
-          color += (glow + flare) * starColor * twinkle;
+          float brightness = trisn(uTime + seed * 6.2831) * 0.5 + 1.0;
+          color += star(grid - vec2(float(x), float(y)) - drift, flare)
+            * size * base * mix(1.0, brightness, 0.3);
         }
       }
       return color;
     }
 
     void main() {
-      vec2 uv = (gl_FragCoord.xy - uResolution * 0.5) / uResolution.y;
-      vec2 mouse = (uMouse - 0.5) * vec2(0.32, -0.22);
-      uv -= mouse * 0.12 * uActive;
-      float angle = uTime * 0.018;
-      mat2 rotation = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
-      uv = rotation * uv;
+      vec2 focal = vec2(0.5) * uResolution;
+      vec2 uv = (gl_FragCoord.xy - focal) / uResolution.y;
+      vec2 mouse = (uMouse * uResolution - focal) / uResolution.y;
+      float distanceToMouse = length(uv - mouse);
+      vec2 repulsion = normalize(uv - mouse) * (2.0 / (distanceToMouse + 0.1));
+      uv += repulsion * 0.05 * uActive;
+      float angle = uTime * 0.1;
+      uv = mat2(cos(angle), -sin(angle), sin(angle), cos(angle)) * uv;
 
       vec3 color = vec3(0.0);
-      for (float layer = 0.0; layer < 4.0; layer += 1.0) {
-        float depth = fract(layer * 0.25 + uTime * 0.018);
-        float scale = mix(22.0, 2.0, depth);
-        color += starLayer(uv * scale, layer) * depth * 0.22;
+      for (float layer = 0.0; layer < 1.0; layer += 1.0 / NUM_LAYER) {
+        float depth = fract(layer + uTime * 0.05);
+        float scale = mix(30.0 * 1.5, 0.75 * 1.5, depth);
+        float fade = depth * smoothstep(1.0, 0.9, depth);
+        color += starLayer(uv * scale + layer * 453.32, layer) * fade;
       }
-
-      float vignette = smoothstep(1.35, 0.15, length(uv));
-      gl_FragColor = vec4(color * vignette, 1.0);
+      gl_FragColor = vec4(color, 1.0);
     }
   `;
 
