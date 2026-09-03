@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<title>Profil XI RPL 2 - SMKN 1 Garut</title>
-=======
 <title>Profil XI Rekayasa Perangkat Lunak - SMKN 1 GARUT</title>
->>>>>>> origin/adjie
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -38,6 +34,34 @@
     --text-secondary: #8b949e;
     --text-muted: #6e7681;
   }
+
+  body { position: relative; overflow-x: hidden; }
+
+  #galaxy-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+    background: #050816;
+  }
+
+  body.galaxy-active #galaxy-background { opacity: 1; }
+
+  body.galaxy-active {
+    --bg-primary: #080d1c;
+    --bg-secondary: #0d1428;
+    --bg-tertiary: rgba(23, 34, 62, 0.78);
+    --bg-card: rgba(10, 18, 38, 0.84);
+    --border: rgba(111, 151, 224, 0.25);
+    --text-primary: #edf4ff;
+    --text-secondary: #aebddd;
+  }
+
+  header, main, footer, .hero { position: relative; z-index: 1; }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -158,6 +182,11 @@
   .theme-toggle:hover svg {
     transform: rotate(15deg);
   }
+
+  .background-toggle.galaxy-button { color: #7dd3fc; }
+  .background-toggle.galaxy-button svg + svg { display: none; }
+  .background-toggle.white-button { color: #f8fafc; background: #ffffff; }
+  .background-toggle.white-button svg { color: #2563eb; }
 
   .sun-icon, .moon-icon {
     display: none;
@@ -533,6 +562,8 @@
 </head>
 <body>
 
+<canvas id="galaxy-background" aria-hidden="true"></canvas>
+
 <header>
   <div class="container">
     <div class="header-inner">
@@ -544,18 +575,13 @@
           </svg>
         </div>
         <div class="brand-text">
-<<<<<<< HEAD
-          <div class="brand-name">XI RPL 2</div>
-          <div class="brand-sub">SMKN 1 Garut</div>
-=======
           <div class="brand-name">XI Rekayasa Perangkat Lunak</div>
           <div class="brand-sub">SMKN 1 GARUT</div>
->>>>>>> origin/adjie
         </div>
       </div>
       <div class="header-actions">
         <div class="nav-badge">Challenge 4</div>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <button class="theme-toggle background-toggle galaxy-button" onclick="toggleGalaxy()" aria-label="Aktifkan background Galaxy" title="Background Galaxy">
           <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
@@ -571,6 +597,9 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
+        <button class="theme-toggle background-toggle white-button" onclick="setWhiteBackground()" aria-label="Gunakan background putih" title="Background putih">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
       </div>
     </div>
   </div>
@@ -578,17 +607,10 @@
 
 <section class="hero">
   <div class="container">
-<<<<<<< HEAD
-    <div class="hero-eyebrow">SMKN 1 Garut</div>
-    <h1>Profil <span class="accent">Kelas XI RPL 2</span></h1>
-    <p class="hero-desc">
-      Siswa kelas XI Rekayasa Perangkat Lunak yang sedang belajar kolaborasi tim menggunakan Git dan GitHub.
-=======
     <div class="hero-eyebrow">SMKN 1 GARUT</div>
     <h1>Profil <span class="accent">Kelas XI Rekayasa Perangkat Lunak</span></h1>
     <p class="hero-desc">
       Kelas kita pernah menjuarai Juara 1 Teater dan Juara 2 Padus, serta memiliki banyak murid yang berprestasi.
->>>>>>> origin/adjie
     </p>
   </div>
 </section>
@@ -604,38 +626,14 @@
           </svg>
         </div>
         <div class="profile-title">
-<<<<<<< HEAD
-          <h2>XI Rekayasa Perangkat Lunak 2</h2>
-          <span class="subtitle">SMKN 1 Garut</span>
-=======
           <h2>XI Rekayasa Perangkat Lunak</h2>
           <span class="subtitle">SMKN 1 GARUT</span>
->>>>>>> origin/adjie
         </div>
       </div>
 
       <div class="profile-grid">
         <div class="info-box">
           <h4>Nama Sekolah</h4>
-<<<<<<< HEAD
-          <p>SMKN 1 Garut</p>
-        </div>
-        <div class="info-box">
-          <h4>Nama Kelas</h4>
-          <p>XI RPL 2</p>
-        </div>
-        <div class="info-box">
-          <h4>Program Keahlian</h4>
-          <p>Pengembangan Perangkat Lunak dan Gim</p>
-        </div>
-        <div class="info-box">
-          <h4>Konsentrasi Keahlian</h4>
-          <p>Rekayasa Perangkat Lunak (RPL)</p>
-        </div>
-        <div class="info-box">
-          <h4>Mata Pelajaran</h4>
-          <p>Dasar-Dasar Pengembangan Perangkat Lunak dan Gim</p>
-=======
           <p>SMKN 1 GARUT</p>
         </div>
         <div class="info-box">
@@ -653,7 +651,6 @@
         <div class="info-box">
           <h4>Visi Kelas</h4>
           <p>Berusaha menjadi lebih baik dan mengikuti perlombaan antar jurusan.</p>
->>>>>>> origin/adjie
         </div>
         <div class="info-box">
           <h4>Topik Pembelajaran</h4>
@@ -680,11 +677,7 @@
           Visi
         </h4>
         <p>
-<<<<<<< HEAD
-          Menjadi kelas yang unggul dalam pengembangan perangkat lunak dengan menerapkan praktik kolaborasi tim profesional menggunakan Git dan GitHub, serta siap menghadapi tantangan industri teknologi informasi.
-=======
           Berusaha menjadi lebih baik dan mengikuti perlombaan antar jurusan.
->>>>>>> origin/adjie
         </p>
       </div>
 
@@ -701,43 +694,19 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
-<<<<<<< HEAD
-            Menguasai konsep dasar pengembangan perangkat lunak secara kolaboratif
-=======
             Mengembangkan kemampuan dalam pengembangan perangkat lunak dan kolaborasi tim
->>>>>>> origin/adjie
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
-<<<<<<< HEAD
-            Menerapkan workflow Git yang profesional dalam setiap proyek
-=======
             Menjaga semangat belajar agar terus menjadi lebih baik
->>>>>>> origin/adjie
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
-<<<<<<< HEAD
-            Melakukan code review untuk meningkatkan kualitas kode
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            Mengembangkan kemampuan komunikasi dan kerja tim
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            Memahami etika kerja kolaboratif dalam pengembangan perangkat lunak
-=======
             Aktif mengikuti perlombaan antar jurusan untuk meningkatkan prestasi
->>>>>>> origin/adjie
           </li>
         </ul>
       </div>
@@ -745,7 +714,7 @@
 
     <div class="section-header">
       <div class="section-eyebrow">// ANGGOTA</div>
-      <h3>Kelompok 9</h3>
+      <h3>Kelompok 7</h3>
       <div class="section-line"></div>
     </div>
 
@@ -776,11 +745,15 @@
 
 <footer>
   <div class="container">
-    <p>&copy; 2026 {{ $kelas }}, {{ $sekolah }} &middot; <span>Kelompok 9</span> &middot; Kolaborasi Tim Menggunakan Git dan GitHub</p>
+    <p>&copy; 2026 {{ $kelas }}, {{ $sekolah }} &middot; <span>Kelompok 7</span> &middot; Kolaborasi Tim Menggunakan Git dan GitHub</p>
   </div>
 </footer>
 
 <script>
+  const galaxyScript = document.createElement('script');
+  galaxyScript.src = '/js/galaxy.js';
+  document.body.appendChild(galaxyScript);
+
   function toggleTheme() {
     const body = document.body;
     const currentTheme = body.getAttribute('data-theme');

@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<title>XI RPL 2 - Kelompok 9 | Profile Anggota</title>
-=======
-<title>XI Rekayasa Perangkat Lunak - Kelompok 9 | Profile Anggota</title>
->>>>>>> origin/adjie
+<title>XI Rekayasa Perangkat Lunak - Kelompok 7 | Profile Anggota</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -26,6 +22,42 @@
     --blue-600: #2563eb;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  #galaxy-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+    background: #050816;
+  }
+
+  body.galaxy-active #galaxy-background {
+    opacity: 1;
+  }
+
+  body.galaxy-active {
+    --bg-primary: #080d1c;
+    --bg-secondary: #0d1428;
+    --bg-tertiary: rgba(23, 34, 62, 0.78);
+    --bg-card: rgba(10, 18, 38, 0.84);
+    --border: rgba(111, 151, 224, 0.25);
+    --text-primary: #edf4ff;
+    --text-secondary: #aebddd;
+  }
+
+  header, .hero, main, footer {
+    position: relative;
+    z-index: 1;
   }
 
   [data-theme="dark"] {
@@ -158,6 +190,11 @@
   .theme-toggle:hover svg {
     transform: rotate(15deg);
   }
+
+  .background-toggle.galaxy-button { color: #7dd3fc; }
+  .background-toggle.galaxy-button svg + svg { display: none; }
+  .background-toggle.white-button { color: #f8fafc; background: #ffffff; }
+  .background-toggle.white-button svg { color: #2563eb; }
 
   .sun-icon, .moon-icon {
     display: none;
@@ -531,9 +568,40 @@
   footer span {
     color: var(--blue-500);
   }
+
+  /* BACK BUTTON */
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--blue-500);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 24px 0;
+  }
+
+  .back-btn:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.3);
+    color: var(--blue-600);
+  }
+
+  .back-btn svg {
+    width: 16px;
+    height: 16px;
+  }
 </style>
 </head>
 <body>
+
+<canvas id="galaxy-background" aria-hidden="true"></canvas>
 
 <header>
   <div class="container">
@@ -546,18 +614,14 @@
           </svg>
         </div>
         <div class="brand-text">
-<<<<<<< HEAD
-          <div class="brand-name">XI RPL 2</div>
-=======
           <div class="brand-name">XI Rekayasa Perangkat Lunak</div>
->>>>>>> origin/adjie
-          <div class="brand-sub">Kelompok 9</div>
+          <div class="brand-sub">Kelompok 7</div>
         </div>
       </div>
       <div class="header-actions">
         <div class="nav-badge">GitHub Collaboration</div>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="theme-toggle background-toggle galaxy-button" onclick="toggleGalaxy()" aria-label="Aktifkan background Galaxy" title="Background Galaxy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
             <line x1="12" y1="21" x2="12" y2="23"/>
@@ -568,9 +632,12 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
+        </button>
+        <button class="theme-toggle background-toggle white-button" onclick="setWhiteBackground()" aria-label="Gunakan background putih" title="Background putih">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         </button>
       </div>
     </div>
@@ -579,17 +646,10 @@
 
 <section class="hero">
   <div class="container">
-<<<<<<< HEAD
-    <div class="hero-eyebrow">SMKN 1 Garut</div>
-    <h1>Profile <span class="accent">Anggota Tim</span></h1>
-    <p class="hero-desc">
-      Siswa kelas XI RPL 2 yang sedang belajar kolaborasi tim menggunakan Git dan GitHub.
-=======
     <div class="hero-eyebrow">SMKN 1 GARUT</div>
     <h1>Profile <span class="accent">Anggota Tim</span></h1>
     <p class="hero-desc">
       Kelas XI Rekayasa Perangkat Lunak yang berprestasi, pernah juara 1 Teater dan juara 2 Padus, serta memiliki banyak murid berprestasi.
->>>>>>> origin/adjie
     </p>
     <div class="hero-topik">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -602,6 +662,12 @@
 
 <main>
   <div class="container">
+    <a href="/" class="back-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Kembali ke Profil
+    </a>
     <div class="section">
       <div class="section-header">
         <div class="section-eyebrow">// DEVELOPER</div>
@@ -656,11 +722,7 @@
               </svg>
               rakaXPPL2/Website-Profil-Kelas-XI-RPL
             </div>
-<<<<<<< HEAD
-            <p class="repo-desc">Repository utama untuk project kelompok 9 XI RPL 2</p>
-=======
-            <p class="repo-desc">Repository utama untuk project kelompok 9 XI Rekayasa Perangkat Lunak</p>
->>>>>>> origin/adjie
+            <p class="repo-desc">Repository utama untuk project kelompok 7 XI Rekayasa Perangkat Lunak</p>
             <div class="repo-meta">
               <span class="repo-lang">
                 <span class="lang-dot" style="background: #f1e05a;"></span>
@@ -696,11 +758,15 @@
 
 <footer>
   <div class="container">
-    <p>&copy; 2026 {{ $kelas }}, {{ $sekolah }} &middot; <span>Kelompok 9</span> &middot; Kolaborasi Tim Menggunakan Git dan GitHub</p>
+    <p>&copy; 2026 {{ $kelas }}, {{ $sekolah }} &middot; <span>Kelompok 7</span> &middot; Kolaborasi Tim Menggunakan Git dan GitHub</p>
   </div>
 </footer>
 
 <script>
+  const galaxyScript = document.createElement('script');
+  galaxyScript.src = '/js/galaxy.js';
+  document.body.appendChild(galaxyScript);
+
   function toggleTheme() {
     const body = document.body;
     const currentTheme = body.getAttribute('data-theme');
