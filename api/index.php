@@ -19,8 +19,6 @@ putenv('DB_DATABASE=:memory:');
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = require_once __DIR__ . '/../bootstrap/app.php';
-$app->register(\Illuminate\View\ViewServiceProvider::class);
 $storagePath = '/tmp/laravel-storage';
 
 if (!is_dir($storagePath)) {
@@ -30,7 +28,9 @@ if (!is_dir($storagePath)) {
 	mkdir($storagePath . '/logs', 0755, true);
 }
 
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 $app->useStoragePath($storagePath);
+$app->register(\Illuminate\View\ViewServiceProvider::class);
 $response = $app->handleRequest(Illuminate\Http\Request::capture());
 if ($response instanceof \Symfony\Component\HttpFoundation\Response) {
 	$response->send();
