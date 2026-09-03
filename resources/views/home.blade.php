@@ -191,17 +191,11 @@
     transform: rotate(15deg);
   }
 
-  .background-toggle.galaxy-button { color: #7dd3fc; }
-  .background-toggle.galaxy-button svg + svg { display: none; }
-  .background-toggle.white-button { color: #f8fafc; background: #ffffff; }
-  .background-toggle.white-button svg { color: #2563eb; }
-
-  .sun-icon, .moon-icon {
-    display: none;
-  }
-
-  [data-theme="dark"] .sun-icon { display: block; }
-  [data-theme="dark"] .moon-icon { display: none; }
+  .background-toggle .icon-galaxy { display: block; color: #60a5fa; }
+  .background-toggle .icon-sun { display: none; color: #fbbf24; }
+  body.galaxy-active .background-toggle { background: rgba(125, 211, 252, 0.12); border-color: rgba(125, 211, 252, 0.4); }
+  body.galaxy-active .background-toggle .icon-galaxy { display: none; }
+  body.galaxy-active .background-toggle .icon-sun { display: block; }
 
   /* HERO */
   .hero {
@@ -620,8 +614,13 @@
       </div>
       <div class="header-actions">
         <div class="nav-badge">GitHub Collaboration</div>
-        <button class="theme-toggle background-toggle galaxy-button" onclick="toggleGalaxy()" aria-label="Aktifkan background Galaxy" title="Background Galaxy">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="theme-toggle background-toggle" type="button" data-bg-toggle onclick="toggleGalaxy()" aria-pressed="false" aria-label="Aktifkan background Galaxy" title="Aktifkan background Galaxy">
+          <svg class="icon-galaxy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c-.6 1.7-.6 3.4 0 5 .6 1.6 1.8 2.8 3.4 3.4 1.6.6 3.3.6 5 0-1.1 2.7-3.1 4.9-5.7 6.2-4.5 2.2-9.9.4-12.1-4.1C.4 9 2.2 3.6 6.7 1.4c1.7-.8 3.5-1 5.3-.7Z"/>
+            <circle cx="18.5" cy="6" r="0.9" fill="currentColor" stroke="none"/>
+            <circle cx="20" cy="14.5" r="0.6" fill="currentColor" stroke="none"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
             <line x1="12" y1="21" x2="12" y2="23"/>
@@ -632,12 +631,6 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-        <button class="theme-toggle background-toggle white-button" onclick="setWhiteBackground()" aria-label="Gunakan background putih" title="Background putih">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         </button>
       </div>
     </div>
@@ -764,8 +757,15 @@
 
 <script>
   const galaxyScript = document.createElement('script');
+  galaxyScript.type = 'module';
   galaxyScript.src = '/js/galaxy.js';
   document.body.appendChild(galaxyScript);
+
+  window.toggleBackground = function () {
+    if (typeof window.toggleGalaxy === 'function') {
+      window.toggleGalaxy();
+    }
+  };
 
   function toggleTheme() {
     const body = document.body;
