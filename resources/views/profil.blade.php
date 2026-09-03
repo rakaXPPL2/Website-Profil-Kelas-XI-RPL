@@ -575,7 +575,7 @@
       </div>
       <div class="header-actions">
         <div class="nav-badge">Challenge 4</div>
-        <button class="theme-toggle background-toggle" type="button" data-bg-toggle onclick="toggleGalaxy()" aria-pressed="false" aria-label="Aktifkan background Galaxy" title="Aktifkan background Galaxy">
+        <button class="theme-toggle background-toggle" type="button" data-bg-toggle onclick="toggleBackground()" aria-pressed="false" aria-label="Aktifkan background Galaxy" title="Aktifkan background Galaxy">
           <svg class="icon-galaxy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 3c-.6 1.7-.6 3.4 0 5 .6 1.6 1.8 2.8 3.4 3.4 1.6.6 3.3.6 5 0-1.1 2.7-3.1 4.9-5.7 6.2-4.5 2.2-9.9.4-12.1-4.1C.4 9 2.2 3.6 6.7 1.4c1.7-.8 3.5-1 5.3-.7Z"/>
             <circle cx="18.5" cy="6" r="0.9" fill="currentColor" stroke="none"/>
@@ -745,13 +745,17 @@
 <script>
   const galaxyScript = document.createElement('script');
   galaxyScript.type = 'module';
-  galaxyScript.src = '/js/galaxy.js';
+  galaxyScript.src = '/js/galaxy-reactbits.js';
   document.body.appendChild(galaxyScript);
 
   window.toggleBackground = function () {
-    if (typeof window.toggleGalaxy === 'function') {
-      window.toggleGalaxy();
-    }
+    const isActive = document.body.classList.toggle('galaxy-active');
+    localStorage.setItem('galaxy', isActive ? 'on' : 'off');
+    document.querySelectorAll('[data-bg-toggle]').forEach((button) => {
+      button.setAttribute('aria-pressed', String(isActive));
+      button.setAttribute('aria-label', isActive ? 'Matikan background Galaxy' : 'Aktifkan background Galaxy');
+      button.setAttribute('title', isActive ? 'Matikan background Galaxy' : 'Aktifkan background Galaxy');
+    });
   };
 
   function toggleTheme() {
