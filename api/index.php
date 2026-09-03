@@ -37,6 +37,7 @@ if (!is_dir($storagePath)) {
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 $app->useStoragePath($storagePath);
+$app->register(\Illuminate\View\ViewServiceProvider::class);
 
 try {
 	$response = $app->handleRequest(Illuminate\Http\Request::capture());
