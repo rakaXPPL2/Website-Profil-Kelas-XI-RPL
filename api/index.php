@@ -45,7 +45,27 @@ try {
 		$response->send();
 	}
 } catch (\Throwable $exception) {
-	error_log(sprintf('Laravel request error: %s in %s:%d', $exception->getMessage(), $exception->getFile(), $exception->getLine()));
+	error_log(sprintf(
+		"Laravel request error: %s in %s:%d\nStack trace:\n%s",
+		$exception->getMessage(),
+		$exception->getFile(),
+		$exception->getLine(),
+		$exception->getTraceAsString()
+	));
 	http_response_code(500);
+
+	// TEMPORARY DEBUG MODE: visit any URL with ?debug_key=xirpl-debug-2026
+	// to see the real error instead of the generic message. Remove this
+	// block (and revert to the plain "Application error" echo) once the
+	// bug is found and fixed.
+	if (($_GET['debug_key'] ?? null) === 'xirpl-debug-2026') {
+		header('Content-Type: text/plain');
+		echo "EXCEPTION: " . get_class($exception) . "\n";
+		echo "MESSAGE: " . $exception->getMessage() . "\n";
+		echo "FILE: " . $exception->getFile() . ':' . $exception->getLine() . "\n\n";
+		echo "TRACE:\n" . $exception->getTraceAsString();
+		return;
+	}
+
 	echo 'Application error';
 }
