@@ -9,17 +9,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --bg-card: #ffffff;
-    --border: #e2e8f0;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --text-muted: #94a3b8;
-    --blue-400: #60a5fa;
-    --blue-500: #3b82f6;
-    --blue-600: #2563eb;
+    --bg-primary: #eaf1ff;
+    --bg-secondary: #edf4ff;
+    --bg-tertiary: #dde9ff;
+    --bg-card: #edf4ff;
+    --border: rgba(148, 163, 184, 0.18);
+    --text-primary: #1d2a3a;
+    --text-secondary: #4d6078;
+    --text-muted: #7a8ea6;
+    --blue-400: #8dc3ff;
+    --blue-500: #6ea8ff;
+    --blue-600: #4f83f8;
+    --clay-shadow: 18px 18px 36px rgba(160, 176, 209, 0.4), -18px -18px 36px rgba(255, 255, 255, 0.9);
+    --clay-shadow-sm: 8px 8px 18px rgba(160, 176, 209, 0.3), -8px -8px 18px rgba(255, 255, 255, 0.8);
+    --clay-inset: inset 6px 6px 14px rgba(255, 255, 255, 0.7), inset -6px -6px 14px rgba(162, 177, 207, 0.18);
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
   }
@@ -66,7 +69,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: var(--bg-primary);
+    background: linear-gradient(135deg, #edf4ff 0%, #e0ebff 50%, #dfeafc 100%);
     color: var(--text-primary);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -280,11 +283,12 @@
   /* PROFILE CARD */
   .profile-card {
     background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 30px;
     padding: 32px;
     margin-bottom: 32px;
-    transition: background 0.3s ease, border-color 0.3s ease;
+    box-shadow: var(--clay-shadow);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
   }
 
   .profile-header {
@@ -332,11 +336,12 @@
   }
 
   .info-box {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    transition: background 0.3s ease;
+    background: linear-gradient(145deg, rgba(255,255,255,0.7), rgba(223,233,255,0.9));
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 22px;
+    padding: 18px 16px;
+    box-shadow: var(--clay-shadow-sm);
+    transition: all 0.2s ease;
   }
 
   .info-box h4 {
@@ -356,10 +361,11 @@
   /* VISI MISI */
   .visi-misi-card {
     background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 30px;
     padding: 32px;
     margin-bottom: 32px;
+    box-shadow: var(--clay-shadow);
     transition: background 0.3s ease, border-color 0.3s ease;
   }
 
@@ -416,12 +422,13 @@
     align-items: flex-start;
     gap: 12px;
     padding: 14px;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-    border-left: 2px solid var(--blue-500);
+    background: linear-gradient(145deg, rgba(255,255,255,0.75), rgba(223,233,255,0.85));
+    border-radius: 18px;
+    border-left: 3px solid var(--blue-500);
     color: var(--text-secondary);
     font-size: 13px;
     line-height: 1.6;
+    box-shadow: var(--clay-shadow-sm);
     transition: background 0.3s ease;
   }
 
@@ -452,19 +459,20 @@
   }
 
   .member-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.7), rgba(223,233,255,0.9));
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 24px;
     padding: 24px 16px;
     text-align: center;
     transition: all 0.2s ease;
     display: block;
+    box-shadow: var(--clay-shadow-sm);
   }
 
   .member-card:hover {
-    border-color: var(--blue-500);
+    border-color: rgba(79, 131, 248, 0.35);
     transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 12px 26px rgba(103, 124, 170, 0.21);
   }
 
   .member-avatar {
@@ -516,18 +524,19 @@
     font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 500;
-    padding: 12px 24px;
-    border-radius: 10px;
-    background: var(--blue-600);
+    padding: 14px 26px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #74a9ff, #4f83f8);
     color: white;
     border: none;
+    box-shadow: 8px 8px 18px rgba(98, 125, 193, 0.4), -8px -8px 18px rgba(255,255,255,0.5);
     transition: all 0.2s ease;
   }
 
   .cta-btn:hover {
-    background: var(--blue-500);
+    background: linear-gradient(145deg, #85b6ff, #5d8ef7);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 10px 10px 24px rgba(98, 125, 193, 0.42), -8px -8px 18px rgba(255,255,255,0.6);
   }
 
   .cta-btn svg {
